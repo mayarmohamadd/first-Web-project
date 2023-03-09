@@ -1,0 +1,48 @@
+*{
+    border-radius: 12px;
+}
+
+body{
+
+    background-color:#053e5e;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section{
+    background-color: #ffff;
+    width: 400px;
+    height: 350px;
+    margin: 200px auto 0 auto;
+    position: relative;
+    transition-duration:  1s;
+}
+
+section:hover{
+    height: 400px;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    position:absolute;
+    left:50px;
+    top: -30px;
+    transition-duration: 0.5s;
+}
+section:hover img{
+    top:-100px;
+    border-radius: 50%;
+    transform: rotate(720deg);
+}
+.contner{
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition-duration:0.4s ;
+}
+section:hover .contner{
+    opacity: 1;
+}
